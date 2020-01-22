@@ -44,11 +44,15 @@
  .circle-container > *:nth-of-type(12) {
 	transform: rotate(330deg) translate(15em) rotate(-330deg);
 }
- .circle-container img {
+.circle-container > *:nth-of-type(12):hover {
+	transform: rotate(330deg) translate(15em) rotate(-330deg);
+}
+ .circle-container svg {
     height: 3rem;
 	max-width: 100%;
 	transition: 0.15s;
 }
- .circle-container img:hover {
-    transform: scale(1.5);
+ .circle-container svg:hover {
+	transform: scale(1.5);
+	fill: red;
 }
