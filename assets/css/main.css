@@ -100,13 +100,13 @@ button {
 	border: none;
 	background-color: transparent;
 	outline: none;
+	z-index: 2;
 }
- .circle-container svg {
+object {
     height: 3rem;
 	max-width: 100%;
 	transition: 0.15s;
 }
- .circle-container svg:hover {
+.circle-container object:hover {
 	transform: scale(1.5);
-	fill: red;
 }
