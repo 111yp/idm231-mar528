@@ -25,3 +25,8 @@ function detectGem(self) {
         $('#content').fadeIn(0);
     });
 }
+
+$( "#target" ).submit(function( event ) {
+    alert( "Handler for .submit() called." );
+    event.preventDefault();
+  });
