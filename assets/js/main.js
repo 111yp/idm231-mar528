@@ -21,6 +21,7 @@ function detectGem(self) {
     for (i = 0; i < list.length; i++) {
         if (list[i].name === self) {
             var audio = document.getElementById("audio");
+            audio.loop = true;
             var mute = document.getElementById("muted");
             if (list[i].name === 'gem14' && muted === false) {
                 mute.setAttribute('data', "assets/svg/mute.svg");
@@ -47,3 +48,41 @@ function detectGem(self) {
         }
     }
 }
+$(document).ready(function(){
+    $("form").submit(function(e){
+        e.preventDefault();
+        var birthday = $('form').serializeArray()[0].value.substr(5);
+        var whichMonth = Number(birthday.substr(0, birthday.length-3));
+        var whichDayOfMonth = Number(birthday.substr(3));
+        console.log(whichMonth);
+        console.log(whichDayOfMonth);
+
+        if ((whichMonth == 12 && whichDayOfMonth >= 22) || (whichMonth == 1 && whichDayOfMonth <= 19)) {
+            AstroSign = "Cap";
+            detectGem('gem1');
+          } else if ((whichMonth == 11 && whichDayOfMonth >= 22) || (whichMonth == 12 && whichDayOfMonth <= 21)) {
+            detectGem('gem2');
+          } else if ((whichMonth == 10 && whichDayOfMonth >= 24) || (whichMonth == 11 && whichDayOfMonth <= 21)) {
+            detectGem('gem3');
+          } else if ((whichMonth == 9 && whichDayOfMonth >= 23) || (whichMonth == 10 && whichDayOfMonth <= 23)) {
+            detectGem('gem4');
+          } else if ((whichMonth == 8 && whichDayOfMonth >= 23) || (whichMonth == 9 && whichDayOfMonth <= 22)) {
+            detectGem('gem5');
+          } else if ((whichMonth == 7 && whichDayOfMonth >= 23) || (whichMonth == 8 && whichDayOfMonth <= 22)) {
+            detectGem('gem6');
+          } else if ((whichMonth == 6 && whichDayOfMonth >= 22) || (whichMonth == 7 && whichDayOfMonth <= 22)) {
+            detectGem('gem7');
+          } else if ((whichMonth == 5 && whichDayOfMonth >= 21) || (whichMonth == 6 && whichDayOfMonth <= 21)) {
+            detectGem('gem8');
+          } else if ((whichMonth == 4 && whichDayOfMonth >= 20) || (whichMonth == 5 && whichDayOfMonth <= 20)) {
+            detectGem('gem9');
+          } else if ((whichMonth == 3 && whichDayOfMonth >= 21) || (whichMonth == 4 && whichDayOfMonth <= 19)) {
+            detectGem('gem10');
+          } else if ((whichMonth == 2 && whichDayOfMonth >= 19) || (whichMonth == 3 && whichDayOfMonth <= 20)) {
+            detectGem('gem11');
+          } else if ((whichMonth == 1 && whichDayOfMonth >= 20) || (whichMonth == 2 && whichDayOfMonth <= 18)) {
+            detectGem('gem12');
+          }
+          console.log(AstroSign);
+  });
+});

@@ -9,6 +9,10 @@
 		padding: 0 1rem 2.5rem !important;
 	}
 
+	.form {
+		padding: 1rem 1.5rem !important;
+	}
+
 	.wrapper {
 		width: 100% !important;
 	}
@@ -110,7 +114,6 @@ p {
 	top: 50%;
 	left: 50%;
 	list-style-type: none;
-	height: 22.5rem;
 	width: 20rem;
 	padding: 2rem;
     border-radius: 50%;
@@ -199,3 +202,33 @@ object {
 button:hover object{
 	transform: scale(1.5);
 }
+
+.form {
+	display: grid;
+	padding: 1rem;
+	grid-template-columns: auto auto;
+	font-size: 16px;
+	text-align: left;
+	font-family: 'Montserrat', sans-serif;
+	grid-gap: 1rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button,
+input::-webkit-calendar-picker-indicator  {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	border: none;
+	padding: .25rem;
+	border-radius: 3px;
+	background-color: #F8F8F8;
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
+  }
