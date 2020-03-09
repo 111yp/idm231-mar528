@@ -10,8 +10,9 @@ var gem9 = {name: 'gem9', value: '#F37C62', tint:"#FFAF95"}; //lava
 var gem10 = {name: 'gem10', value: '#FBE4DA', tint:"#FFFEF4"}; //spirit
 var gem11 = {name: 'gem11', value: '#D3EE92', tint:"#FFFFC5"}; //healing
 var gem12 = {name: 'gem12', value: '#BB886C', tint:"#EEBB9F"}; //seismic
+var gem13 = {name: 'gem13', value: '#D5CABD', tint:"#EEBB9F"}; //seismic
 
-let list = [gem1, gem2, gem3, gem4, gem5, gem6, gem7, gem8, gem9, gem10, gem11, gem12];
+let list = [gem1, gem2, gem3, gem4, gem5, gem6, gem7, gem8, gem9, gem10, gem11, gem12, gem13];
 
 function detectGem(self) {
     for (i = 0; i < list.length; i++) {
@@ -19,7 +20,7 @@ function detectGem(self) {
             $('body').css("background-color", list[i].value);
         }
     }
-    $('#content, #gem1-display, #gem2-display, #gem3-display, #gem4-display, #gem5-display, #gem6-display, #gem7-display, #gem8-display, #gem9-display, #gem10-display, #gem11-display, #gem12-display').fadeOut(0, function()
+    $('#content, #gem1-display, #gem2-display, #gem3-display, #gem4-display, #gem5-display, #gem6-display, #gem7-display, #gem8-display, #gem9-display, #gem10-display, #gem11-display, #gem12-display, #gem13-display').fadeOut(0, function()
     {
         $('#' + self + '-display').fadeIn(0);
         $('#content').fadeIn(0);

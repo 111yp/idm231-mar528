@@ -7,7 +7,8 @@
     <script src="assets/js/main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <ul class='circle-container'>
+    <div class="wrapper">
+    <ul class="circle-container">
         <button id="gem3" onclick="detectGem(this.id)">
             <li><object type="image/svg+xml" data="assets/svg/earth.svg"></object></li>
         </button>
@@ -43,6 +44,9 @@
         </button>
         <button id="gem2" onclick="detectGem(this.id)">
             <li><object type="image/svg+xml" data="assets/svg/water.svg"></object></li>
+        </button>
+        <button id="gem13" onclick="detectGem(this.id)">
+            <li><object type="image/svg+xml" data="assets/svg/question.svg"></object></li>
         </button>
     </ul>
 <div class="content" id="content">
@@ -152,10 +156,19 @@
             <p>Seismic sense is a sub-skill of earthbending that constitutes for physical sense. This skill enables earthbenders to detect vibrations in the ground to perceive objects, people, and other aspects of their environment, essentially acting as sonar, but through earth and metal.</p>
         </div>
     </div>
+    <div class="gem13-display" id="gem13-display">
+        <object type="image/svg+xml" data="assets/svg/question.svg"></object>
+        <h2>About</h2>
+        <div class="text">
+            <p>This webpage is inspired by the twelve zodiacs, but instead of the classic signs they are forms of bending from the show "Avatar The Last Airbender", which was an American animated television series that ran for three seasons between 2005 and 2008.</p>
+            <p>Clicking on the top left question mark icon will bring you back to this "About" page.</p>
+        </div>
+    </div>
     <!-- <form>
         Birthday: <input type="date" name="bday">
         <input type="submit">
     </form> -->
+</div>
 </div>
 </head>
 </html>

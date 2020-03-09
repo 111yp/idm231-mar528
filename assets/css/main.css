@@ -1,4 +1,55 @@
-.gem2-display, .gem3-display,
+@media only screen and (max-width: 650px) {
+	.circle-container {
+		display: grid !important;
+		grid-template-columns: auto auto auto !important;
+		position: unset !important;
+		width: 100% !important;
+		margin-top: 0 !important;
+		grid-gap: 2rem !important;
+		padding: 0 !important;
+	}
+
+	.wrapper {
+		width: 100% !important;
+	}
+
+	.circle-container > *:nth-of-type(n) {
+		transform: none !important;
+		position: unset !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+	}
+
+	.wrapper {
+		flex-direction: column-reverse;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.content {
+		width: 100% !important;
+		position: unset !important;
+		align-self: center !important;
+		transform: none !important;
+		padding: 0 !important;
+		padding-top: 1.5rem !important;
+	}
+
+	.text {
+		margin: 1.25rem 1.5rem 0 !important;
+	}
+}
+
+@keyframes fadeIn { 
+	from {
+		opacity: 0;
+	} to { 
+		opacity: 1;
+	}
+}
+
+.gem2-display, .gem3-display, .gem1-display,
 .gem4-display, .gem5-display, .gem6-display,
 .gem7-display, .gem8-display, .gem9-display,
 .gem10-display, .gem11-display, .gem12-display {
@@ -7,12 +58,13 @@
 
 body {
 	transition: all 3s !important;
-	background-color: #F6CB5B;
+	background-color: #D5CABD;
 }
 
 h2 {
 	font-size: 18px;
-	margin: .5rem 0;
+	margin: 0;
+    margin-top: 1rem;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -23,6 +75,7 @@ h2 {
 	overflow: scroll;
 	overflow-x: hidden;
 	border-radius: 3px;
+	margin-top: 1rem;
 }
 
 p {
@@ -117,6 +170,11 @@ p {
 
 .circle-container > *:nth-of-type(12) {
 	transform: rotate(330deg) translate(15rem) rotate(-330deg);
+}
+
+.circle-container > *:nth-of-type(13) {
+	top: 3rem;
+	left: 3rem;
 }
 
 button {
