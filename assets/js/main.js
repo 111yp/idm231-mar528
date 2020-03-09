@@ -49,6 +49,10 @@ function detectGem(self) {
     }
 }
 $(document).ready(function(){
+    var audio = document.getElementById("audio");
+    audio.loop = true;
+    audio.setAttribute('src', 'assets/mp3/question.mp3');
+
     $("form").submit(function(e){
         e.preventDefault();
         var birthday = $('form').serializeArray()[0].value.substr(5);
