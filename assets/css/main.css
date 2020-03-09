@@ -177,6 +177,11 @@ p {
 	left: 3rem;
 }
 
+.circle-container > *:nth-of-type(14) {
+	top: 8rem;
+	left: 3rem;
+}
+
 button {
 	cursor: pointer;
 	border: none;
